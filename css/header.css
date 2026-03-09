@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 1000;
+  box-shadow: 0 2px 16px rgba(26,46,110,0.13);
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.header .logo h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 1.25rem;
+  color: var(--azul-oscuro);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.header label {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--azul-oscuro);
+  z-index: 1100;
+  user-select: none;
+  padding: 4px 8px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu a {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--azul-oscuro);
+  letter-spacing: 0.08em;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  background: var(--azul-claro);
+  color: var(--blanco);
+}
+
+.menu a.activo {
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: var(--blanco) !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn-whatsapp img {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-whatsapp:hover {
+  background: #1db954;
+  transform: translateY(-2px);
+}

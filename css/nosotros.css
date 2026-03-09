@@ -1,0 +1,99 @@
+.page-section p{
+  color:#546e7a;
+  line-height:1.8; 
+  font-size:1rem;
+  text-align: justify;
+}
+
+.titulos{
+  text-align: center;
+}
+
+.cuerpo-QS{
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.doctor-card {
+  background: var(--gris-claro);
+  border-radius: var(--radio);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--sombra);
+  transition: transform 0.25s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-6px);
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.doctor-card-info {
+  padding: 20px 16px;
+}
+
+.doctor-card-info h3 {
+  font-size: 1.1rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 6px;
+}
+
+.doctor-card-info p {
+  font-size: 0.88rem;
+  color: #546e7a;
+}
+
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.mv-card {
+  background: var(--azul-oscuro);
+  color: var(--blanco) !important;
+  border-radius: var(--radio);
+  padding: 32px 28px;
+}
+
+.mv-card h3 {
+  color: var(--cyan);
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.mv-card p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  opacity: 0.9;
+  color: var(--blanco) !important;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.valor-item {
+  background: var(--gris-claro);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: var(--sombra);
+}

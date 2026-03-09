@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap');
+
+/* === VARIABLES GLOBALES === */
+:root {
+  --azul-oscuro: #1a2e6e;
+  --azul-medio: #1565c0;
+  --azul-claro: #29b6f6;
+  --cyan: #00bcd4;
+  --amarillo: #f5a623;
+  --amarillo-fondo: #f5a623;
+  --blanco: #ffffff;
+  --gris-claro: #f4f6fb;
+  --texto-oscuro: #1a2e6e;
+  --rojo-boton: #e53935;
+  --sombra: 0 4px 24px rgba(26,46,110,0.13);
+  --radio: 16px;
+  --fuente-titulo: 'Playfair Display', serif;
+  --fuente-cuerpo: 'Nunito', sans-serif;
+  --header-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  color: var(--texto-oscuro);
+  background: var(--blanco);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuente-titulo);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--fuente-cuerpo);
+}
+
+input, textarea, select {
+  font-family: var(--fuente-cuerpo);
+}
+
+.page-hero {
+  background: linear-gradient(135deg, var(--azul-oscuro) 60%, var(--azul-claro) 100%);
+  color: var(--blanco);
+  padding: 100px 32px 60px;
+  text-align: center;
+}
+
+.page-hero h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.page-section {
+  padding: 60px 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}

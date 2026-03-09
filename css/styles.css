@@ -1,0 +1,35 @@
+/* =============================================
+   STYLES.CSS - Archivo Principal de Estilos
+   Llama a todos los archivos CSS del proyecto
+   Odontología San Isidro
+   ============================================= */
+
+/* === BASE: Variables, reset y estilos globales === */
+@import url('base.css');
+
+/* === HEADER: Header fijo, nav y menú hamburguesa === */
+@import url('header.css');
+
+/* === INDEX: Banner, tratamientos, elegirnos, casos === */
+@import url('index.css');
+
+/* === NOSOTROS: Equipo, misión, visión y valores === */
+@import url('nosotros.css');
+
+/* === GALERÍA: Grid de casos y filtros === */
+@import url('galeria.css');
+
+/* === CONTACTO: Formulario completo e info === */
+@import url('contacto.css');
+
+/* === FOOTER: Footer compartido en todas las páginas === */
+@import url('footer.css');
+
+/* === PRIVACIDAD: Política de privacidad === */
+@import url('privacidad.css');
+
+/* === RESPONSIVE: Todos los @media queries === */
+@import url('responsive.css');
+
+
+

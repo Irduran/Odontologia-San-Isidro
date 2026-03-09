@@ -1,0 +1,63 @@
+.privacidad-contenido {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+.privacidad-seccion {
+  margin-bottom: 44px;
+}
+
+.privacidad-seccion h2 {
+  font-size: 1.2rem;
+  color: var(--azul-oscuro);
+  font-weight: 900;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--azul-claro);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.privacidad-seccion p {
+  font-size: 0.97rem;
+  color: #37474f;
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.privacidad-seccion ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.privacidad-seccion ul li {
+  font-size: 0.97rem;
+  color: #37474f;
+  line-height: 1.85;
+  padding-left: 20px;
+  position: relative;
+}
+
+.privacidad-seccion ul li::before {
+  content: '▸';
+  color: var(--cyan);
+  position: absolute;
+  left: 0;
+}
+
+.privacidad-fecha {
+  font-size: 0.82rem;
+  color: #90a4ae;
+  text-align: right;
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e7ef;
+}
+
+.link-contacto {
+  color: var(--azul-claro);
+  font-weight: 700;
+  text-decoration: underline;
+}

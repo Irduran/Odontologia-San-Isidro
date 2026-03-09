@@ -1,0 +1,184 @@
+@media (max-width: 1024px) {
+
+  .header {
+    padding: 0 20px;
+  }
+
+  .header .logo {
+    order: 1;
+  }
+
+  .btn-whatsapp {
+    order: 2;
+  }
+
+  .header label {
+    display: block;
+    order: 3;
+  }
+
+  .menu {
+    width: 260px;
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    background: rgba(26,46,110,0.97);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, transform 0.4s ease;
+    transform: translateX(100%);
+    border-radius: 0 0 0 16px;
+    z-index: 999;
+    padding: 0;
+  }
+
+  #menu-bar:checked ~ .menu {
+    max-height: 400px;
+    transform: translateX(0);
+  }
+
+  .menu a {
+    width: 100%;
+    color: var(--blanco);
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    border-radius: 0;
+    font-size: 1rem;
+  }
+
+  .menu a:hover {
+    background: rgba(41,182,246,0.3);
+    color: var(--blanco);
+  }
+
+  .footer-contenido {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header .logo h1 {
+    font-size: 1rem;
+  }
+
+  .header .logo img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .btn-whatsapp {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner-texto {
+    left: 24px;
+    bottom: 28px;
+  }
+
+  .tratamientos-grid {
+    gap: 24px;
+  }
+
+  .tratamiento-icono {
+    width: 82px;
+    height: 82px;
+  }
+
+  .tratamiento-icono img,
+  .tratamiento-icono svg {
+    width: 52px;
+    height: 52px;
+  }
+
+  .elegirnos-contenido {
+    flex-direction: column;
+    border-radius: var(--radio);
+  }
+
+  .elegirnos-imagen {
+    flex: 0 0 200px;
+    width: 100%;
+    border-radius: var(--radio) var(--radio) 0 0;
+    height: 220px;
+  }
+
+  .elegirnos-texto {
+    padding: 28px 24px;
+  }
+
+  .caso-img,
+  .caso-placeholder {
+    min-width: 100%;
+  }
+
+  .footer-contenido {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .equipo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-whatsapp span {
+  display: none;
+}
+
+}
+
+@media (max-width: 480px) {
+
+  .tratamientos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .equipo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+
+}
