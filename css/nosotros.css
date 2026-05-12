@@ -1,99 +1,120 @@
-.page-section p{
-  color:#546e7a;
-  line-height:1.8; 
-  font-size:1rem;
-  text-align: justify;
-}
-
-.titulos{
-  text-align: center;
-}
-
-.cuerpo-QS{
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.equipo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 32px;
-  margin-top: 36px;
-}
-
-.doctor-card {
-  background: var(--gris-claro);
-  border-radius: var(--radio);
-  overflow: hidden;
-  text-align: center;
+.story-card {
+  padding: clamp(2rem, 4vw, 3rem);
+  border-radius: 30px;
+  background: var(--blanco);
   box-shadow: var(--sombra);
-  transition: transform 0.25s;
 }
 
-.doctor-card:hover {
-  transform: translateY(-6px);
+.story-highlight {
+  display: grid;
+  gap: 1rem;
 }
 
-.doctor-card img {
-  width: 100%;
-  height: 220px;
+.story-stat {
+  padding: 1.15rem 1.2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(26, 46, 110, 0.96) 0%, rgba(39, 96, 182, 0.95) 100%);
+  color: var(--blanco);
+  box-shadow: 0 16px 30px rgba(26, 46, 110, 0.16);
+}
+
+.story-stat strong {
+  display: block;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.story-stat span {
+  color: rgba(255, 255, 255, 0.84);
+  line-height: 1.7;
+}
+
+.mission-card {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #142c68 0%, #1c4a9a 100%);
+  color: var(--blanco);
+  box-shadow: var(--sombra);
+}
+
+.mission-icon {
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-card h3 {
+  color: var(--cyan);
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.mission-card p {
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.team-card {
+  border: none;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra);
+}
+
+.team-card img {
+  height: 270px;
   object-fit: cover;
 }
 
-.doctor-card-info {
-  padding: 20px 16px;
+.team-card .card-body {
+  padding: 1.4rem;
 }
 
-.doctor-card-info h3 {
-  font-size: 1.1rem;
-  color: var(--azul-oscuro);
-  margin-bottom: 6px;
+.team-role {
+  color: var(--azul-claro);
+  font-weight: 800;
+  margin-bottom: 0.55rem;
 }
 
-.doctor-card-info p {
-  font-size: 0.88rem;
-  color: #546e7a;
+.team-card .card-text {
+  color: var(--texto-secundario);
+  line-height: 1.7;
 }
 
-.mision-vision {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin-top: 36px;
-}
-
-.mv-card {
-  background: var(--azul-oscuro);
-  color: var(--blanco) !important;
-  border-radius: var(--radio);
-  padding: 32px 28px;
-}
-
-.mv-card h3 {
-  color: var(--cyan);
-  font-size: 1.2rem;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.mv-card p {
-  font-size: 0.95rem;
-  line-height: 1.75;
-  opacity: 0.9;
-  color: var(--blanco) !important;
-}
-
-.valores-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-}
-
-.valor-item {
-  background: var(--gris-claro);
-  border-radius: 12px;
-  padding: 24px;
+.value-card {
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 22px;
+  padding: 2rem 1.4rem;
+  background: var(--blanco);
+  box-shadow: var(--sombra-suave);
   text-align: center;
-  box-shadow: var(--sombra);
+}
+
+.value-card h3 {
+  font-size: 1.35rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 0.75rem;
+}
+
+.value-card p {
+  color: var(--texto-secundario);
+  line-height: 1.7;
+  margin-bottom: 0;
 }

@@ -1,211 +1,294 @@
 <!DOCTYPE html>
-  <html lang="es">
+<html lang="es">
   <head>
-    <!-- === META TAGS === -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Iris Bejarano Durán">
+    <meta name="author" content="Iris Bejarano Durán">
     <meta name="owner" content="Odontología San Isidro">
-    <meta name="description" content="Somos una clínica odontológica especializada en el cuidado de tu salud bucal.">
-    <meta name="keywords" content="odontología, san isidro, clínica, salud bucal, tratamientos odontológicos, dentista, cirugía bucal, implantes, ortodoncia, estética dental, limpieza dental, calzas estéticas, casos de éxito">
-    <meta name="og:title" content="Odontología San Isidro">
-    <meta name="language" content="spanish">
-    <meta name="distribution" content="global">
+    <meta name="description" content="Conoce la historia, misión y equipo de Odontología San Isidro, una clínica dental comprometida con el cuidado integral de tu sonrisa.">
+    <meta name="keywords" content="odontología, clínica dental, nosotros, especialistas, misión, visión, Heredia">
     <meta name="robots" content="index, follow">
-    <!-- Link al CSS principal -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Favicon -->
     <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
-    <title>Odontología San Isidro</title>
+    <title>Nosotros | Odontología San Isidro</title>
   </head>
-    <body>
-      <!-- ===== HEADER  ===== -->
-      <header class="header">
-        <div class="logo">
-          <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-          <h1>ODONTOLOGÍA <br>SAN ISIDRO</h1>
-        </div>
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar" class="icon-menu">&#9776;</label>
-        <nav class="menu">
-          <a href="index.html">INICIO</a>
-          <a href="nosotros.html" class="activo">NOSOTROS</a>
-          <a href="galeria.html">GALERÍA</a>
-          <a href="contacto.html">CONTACTO</a>
-        </nav>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-shell">
+        <div class="container">
+          <a class="navbar-brand brand-lockup" href="index.html">
+            <img src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+            <span class="brand-text">ODONTOLOGÍA<br>SAN ISIDRO</span>
+          </a>
 
-        <a href="https://wa.me/50689914444" class="btn-whatsapp" target="_blank" rel="noopener">
-          <img src="img/whatsapp.png" alt="WhatsApp">
-          <span>Contáctanos</span>
-        </a>
-      </header>
-      <!-- / HEADER -->
-       
-      <!-- ===== HERO DE PÁGINA ===== -->
-      <section class="page-hero">
-        <h2>SOBRE NOSOTROS</h2>
-        <p>Conoce nuestra historia, misión y el equipo de especialistas dedicados a cuidar tu salud bucal.</p>
-      </section>
-      <!-- / HERO -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <!-- ===== CONTENIDO PRINCIPAL ===== -->
-      <main>
-
-        <!-- MISIÓN Y VISIÓN -->
-        <section class="page-section">
-          <h2 class="titulos">¿QUIÉNES SOMOS?</h2>
-          <p class="cuerpo-QS">
-            Odontología San Isidro es una clínica dental ubicada en el corazón de San Isidro de Heredia, Costa Rica.
-            Fundada con la misión de brindar atención odontológica de alta calidad y calor humano, junto con nuestro  equipo de profesionales especializados en diversas ramas de la odontología, equipos de última generación y un ambiente cálido que hace sentir a nuestros pacientes como en casa.
-          </p>
-
-          <div class="mision-vision">
-            <!-- Misión -->
-            <div class="mv-card">
-              <h3>&#127919; MISIÓN</h3>
-              <p>
-                Brindar a nuestros pacientes una atención odontológica integral, personalizada y profesional
-                utilizando tecnología de vanguardia y un equipo humano comprometido con la salud y bienestar bucal
-                de cada individuo y su familia.
-              </p>
-            </div>
-            <!-- Visión -->
-            <div class="mv-card">
-              <h3>&#128161; VISIÓN</h3>
-              <p>
-                Ser la clínica odontológica de referencia en la zona de San Isidro, Heredia, reconocida por la
-                excelencia en atención al paciente, innovación tecnológica y los resultados transformadores
-                que generamos en la vida de nuestros pacientes.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- NUESTRO EQUIPO -->
-        <section class="page-section" style="background: var(--gris-claro); max-width:100%; padding: 60px 32px;">
-          <div style="max-width:1000px; margin:0 auto;">
-            <h2 class="titulos">NUESTRO EQUIPO</h2>
-            <p style="text-align: center;">
-              Especialistas comprometidos con tu sonrisa
-            </p>
-
-            <div class="equipo-grid">
-              <div class="doctor-card">
-                <img src="img/nosotros/especialista1.png" alt="Dra. Francini Durán">
-                <div class="doctor-card-info">
-                  <h3>Dra. Francini Durán</h3>
-                  <p>Odontología General &amp; Estética</p>
-                </div>
-              </div>
-
-              <div class="doctor-card">
-                <img src="img/nosotros/especialista2.png" alt="Dr. Andrés Arias">
-                <div class="doctor-card-info">
-                  <h3>Dr. Andrés Arias</h3>
-                  <p>Cirugía e Implantología</p>
-                </div>
-              </div>
-
-              <div class="doctor-card">
-                <img src="img/nosotros/especialista3.png" alt="Dra. Catalina Brenes">
-                <div class="doctor-card-info">
-                  <h3>Dra. Catalina Brenes</h3>
-                  <p>Ortodoncia</p>
-                </div>
-              </div>
-
-              <div class="doctor-card">
-                <img src="img/nosotros/especialista4.png" alt="Dra. Angélica Rodríguez">
-                <div class="doctor-card-info">
-                  <h3>Dra. Angélica Rodríguez</h3>
-                  <p>Odontopediatría</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <!-- VALORES -->
-        <section class="page-section">
-          <h2 class="titulos">NUESTROS VALORES</h2>
-          <div class="valores-grid">
-
-            <div class="valor-item">
-              <div style="font-size:2.5rem; margin-bottom:12px;">&#10024;</div>
-              <h3 style="color:var(--azul-oscuro); font-size:1.05rem; margin-bottom:8px;">Excelencia</h3>
-              <p style="font-size:0.9rem; color:#546e7a; line-height:1.65;">Nos esforzamos por ofrecer el más alto estándar en cada tratamiento.</p>
-            </div>
-
-            <div class="valor-item">
-              <div style="font-size:2.5rem; margin-bottom:12px;">&#10084;&#65039;</div>
-              <h3 style="color:var(--azul-oscuro); font-size:1.05rem; margin-bottom:8px;">Empatía</h3>
-              <p style="font-size:0.9rem; color:#546e7a; line-height:1.65;">Entendemos tus necesidades y te acompañamos en cada paso.</p>
-            </div>
-
-            <div class="valor-item">
-              <div style="font-size:2.5rem; margin-bottom:12px;">&#128269;</div>
-              <h3 style="color:var(--azul-oscuro); font-size:1.05rem; margin-bottom:8px;">Innovación</h3>
-              <p style="font-size:0.9rem; color:#546e7a; line-height:1.65;">Utilizamos tecnología de punta para resultados superiores.</p>
-            </div>
-
-            <div class="valor-item">
-              <div style="font-size:2.5rem; margin-bottom:12px;">&#128205;</div>
-              <h3 style="color:var(--azul-oscuro); font-size:1.05rem; margin-bottom:8px;">Confianza</h3>
-              <p style="font-size:0.9rem; color:#546e7a; line-height:1.65;">Transparencia y honestidad en cada diagnóstico y plan de tratamiento.</p>
-            </div>
-
-          </div>
-        </section>
-
-      </main>
-      <!-- / MAIN -->
-
-      <!-- ===== FOOTER ===== -->
-      <footer class="footer">
-        <div class="footer-contenido">
-          <div class="footer-logo">
-            <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-            <p>Contáctanos</p>
-            <div class="redes">
-              <a href="https://wa.me/89914444" class="red-social" title="WhatsApp" aria-label="WhatsApp" target="_blank"><img src="img/footer/whatsapp.png" alt="WhatsApp"></a>
-              <a href="tel:+50622687007" class="red-social" title="Teléfono" aria-label="Teléfono"><img src="img/footer/telefono.png" alt="Teléfono"></a>
-              <a href="https://www.instagram.com/odontologiasanisidroheredia/" class="red-social" title="Instagram" aria-label="Instagram" target="_blank"><img src="img/footer/instagram.png" alt="Instagram"></a>
-              <a href="https://www.facebook.com/OSIdentista?locale=es_LA" class="red-social" title="Facebook" aria-label="Facebook" target="_blank"><img src="img/footer/facebook.png" alt="Facebook"></a>
-              <a href="mailto:odontologiasanisidro@yahoo.com" class="red-social" title="Email" aria-label="Email"><img src="img/footer/email.png" alt="Email"></a>
-            </div>
-          </div>
-
-          <div class="footer-info">
-            <h3>UBICACIÓN</h3>
-            <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
-
-            <div class="mapa-embed">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro">
-              </iframe>
-            </div>
-
-            <h3 style="margin-top:16px;">HORARIO</h3>
-            <ul>
-              <li>Lunes a Viernes: 9am a 5pm</li>
-              <li>Sábados: 9am a 2pm</li>
-              <li>Domingo: Cerrado</li>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-whatsapp" href="https://wa.me/50689914444" target="_blank" rel="noopener">
+                  <img src="img/whatsapp.png" alt="Ícono de WhatsApp">
+                  <span>Contáctanos</span>
+                </a>
+              </li>
             </ul>
           </div>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <section class="page-hero">
+        <div class="container text-center">
+          <span class="hero-chip">Sobre nosotros</span>
+          <h1 class="section-title text-white">Comprometidos con tu salud bucal</h1>
+          <p class="section-copy section-copy-light mx-auto">Conoce la historia, la visión y el equipo que da vida a una atención dental cercana, profesional y moderna.</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container py-lg-4">
+          <div class="story-card">
+            <div class="row align-items-center g-4">
+              <div class="col-lg-6">
+                <span class="section-kicker">Quiénes somos</span>
+                <h2 class="section-title">Odontología con calidez y confianza</h2>
+                <p class="section-copy">Odontología San Isidro es una clínica dental ubicada en el corazón de San Isidro de Heredia, Costa Rica. Nació con la misión de brindar atención odontológica de alta calidad con un trato humano que haga sentir a cada paciente en un lugar seguro y cercano.</p>
+                <p class="section-copy mb-0">Trabajamos con especialistas en distintas ramas, equipo actualizado y una experiencia pensada para que cada visita combine comodidad, claridad y resultados.</p>
+              </div>
+              <div class="col-lg-6">
+                <div class="story-highlight">
+                  <div class="story-stat">
+                    <strong>Atención integral</strong>
+                    <span>Tratamientos pensados para toda la familia.</span>
+                  </div>
+                  <div class="story-stat">
+                    <strong>Equipo especializado</strong>
+                    <span>Profesionales en estética, ortodoncia, cirugía e implantología.</span>
+                  </div>
+                  <div class="story-stat">
+                    <strong>Ambiente moderno</strong>
+                    <span>Instalaciones cómodas y tecnología confiable para cada procedimiento.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-soft">
+        <div class="container py-lg-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="mission-card h-100">
+                <span class="mission-icon">🎯</span>
+                <h3>Misión</h3>
+                <p>Brindar atención odontológica integral, personalizada y profesional, utilizando tecnología moderna y un equipo humano comprometido con la salud y el bienestar bucal de cada paciente y su familia.</p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="mission-card h-100">
+                <span class="mission-icon">💡</span>
+                <h3>Visión</h3>
+                <p>Ser la clínica odontológica de referencia en San Isidro, Heredia, reconocida por la excelencia en la atención, la innovación y los resultados transformadores que genera en la vida de sus pacientes.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container py-lg-4">
+          <div class="text-center mb-5">
+            <span class="section-kicker">Nuestro equipo</span>
+            <h2 class="section-title">Especialistas comprometidos con tu sonrisa</h2>
+            <p class="section-copy mx-auto">Cada profesional aporta experiencia, cercanía y criterio clínico para acompañarte en todo tu proceso.</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4">
+            <div class="col">
+              <article class="card team-card h-100">
+                <img src="img/nosotros/especialista1.png" class="card-img-top" alt="Dra. Francini Durán">
+                <div class="card-body">
+                  <h3 class="card-title">Dra. Francini Durán</h3>
+                  <p class="team-role">Odontología General y Estética</p>
+                  <p class="card-text">Enfoque en armonía dental, restauraciones y cuidado integral con atención cercana.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card team-card h-100">
+                <img src="img/nosotros/especialista2.png" class="card-img-top" alt="Dr. Andrés Arias">
+                <div class="card-body">
+                  <h3 class="card-title">Dr. Andrés Arias Castro</h3>
+                  <p class="team-role">Cirugía e Implantología</p>
+                  <p class="card-text">Procedimientos quirúrgicos planificados con precisión para recuperar función y estética.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card team-card h-100">
+                <img src="img/nosotros/especialista3.png" class="card-img-top" alt="Dra. Catalina Brenes">
+                <div class="card-body">
+                  <h3 class="card-title">Dra. Catalina Brenes</h3>
+                  <p class="team-role">Ortodoncia</p>
+                  <p class="card-text">Tratamientos orientados a la alineación dental con seguimiento detallado y humano.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card team-card h-100">
+                <img src="img/nosotros/especialista4.png" class="card-img-top" alt="Dra. Angélica Rodríguez">
+                <div class="card-body">
+                  <h3 class="card-title">Dra. Angélica Rodríguez</h3>
+                  <p class="team-role">Odontopediatría</p>
+                  <p class="card-text">Atención cuidadosa y amable para que niñas y niños vivan una experiencia positiva.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-soft">
+        <div class="container py-lg-4">
+          <div class="text-center mb-5">
+            <span class="section-kicker">Nuestros valores</span>
+            <h2 class="section-title">La forma en que trabajamos</h2>
+            <p class="section-copy mx-auto">Más que tratamientos, buscamos relaciones de confianza y una experiencia clínica tranquila.</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+            <div class="col">
+              <article class="card value-card h-100">
+                <h3>Excelencia</h3>
+                <p>Buscamos altos estándares en cada detalle clínico y humano del servicio.</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card value-card h-100">
+                <h3>Empatía</h3>
+                <p>Escuchamos tus necesidades y acompañamos tu proceso con cercanía y respeto.</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card value-card h-100">
+                <h3>Innovación</h3>
+                <p>Aplicamos herramientas y métodos actuales para lograr mejores resultados.</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="card value-card h-100">
+                <h3>Confianza</h3>
+                <p>Trabajamos con transparencia, honestidad y claridad en cada diagnóstico.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 footer-grid">
+          <div class="col-lg-4">
+            <div class="footer-brand footer-card">
+              <h3>Contáctanos</h3>
+              <p>Atención cálida, tecnología moderna y tratamientos personalizados para cuidar la sonrisa de toda tu familia.</p>
+              <div class="social-links">
+                <a class="social-link" href="https://wa.me/50689914444" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <img src="img/footer/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a class="social-link" href="tel:+50622687007" title="Teléfono" aria-label="Teléfono">
+                  <img src="img/footer/telefono.png" alt="Teléfono">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/odontologiasanisidroheredia/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+                  <img src="img/footer/instagram.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://www.facebook.com/OSIdentista?locale=es_LA" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                  <img src="img/footer/facebook.png" alt="Facebook">
+                </a>
+                <a class="social-link" href="mailto:odontologiasanisidro@yahoo.com" title="Correo electrónico" aria-label="Correo electrónico">
+                  <img src="img/footer/email.png" alt="Correo electrónico">
+                </a>
+                <img class="logo-footer" src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-card h-100">
+              <h3>Visítanos</h3>
+              <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
+              <div class="mapa-embed ratio ratio-4x3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro"></iframe>
+              </div>
+              <ul class="footer-hours">
+                <li>Lunes a viernes: 9:00 a.m. a 5:00 p.m.</li>
+                <li>Sábados: 9:00 a.m. a 2:00 p.m.</li>
+                <li>Domingos: Cerrado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-form-card h-100">
+              <h3>Escríbenos desde aquí</h3>
+              <p>Déjanos tus datos y te contactaremos para ayudarte con tu consulta o cita.</p>
+              <form class="footer-contact-form row g-3 needs-validation" data-form-type="footer" data-success-message="Gracias por escribirnos. Te responderemos pronto." novalidate>
+                <div class="col-12">
+                  <label class="form-label" for="footerNombre">Nombre</label>
+                  <input class="form-control" type="text" id="footerNombre" name="nombre" placeholder="Tu nombre" required>
+                  <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerCorreo">Correo electrónico</label>
+                  <input class="form-control" type="email" id="footerCorreo" name="correo" placeholder="nombre@correo.com" required>
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerMensaje">Mensaje</label>
+                  <textarea class="form-control" id="footerMensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+                  <div class="invalid-feedback">Escribe un mensaje breve.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-footer-submit w-100" type="submit">Enviar consulta</button>
+                </div>
+                <div class="col-12">
+                  <div class="form-status" role="status" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
 
-        <!-- Términos de privacidad -->
         <div class="footer-bottom">
           <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
-          <span>
-            <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Términos de privacidad</a>
-          </span>
+          <span><a href="privacidad.html">Política de privacidad</a></span>
         </div>
-      </footer>
-      <!-- / FOOTER -->
+      </div>
+    </footer>
 
-    </body>
-  </html>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

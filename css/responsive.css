@@ -1,184 +1,129 @@
-@media (max-width: 1024px) {
-
-  .header {
-    padding: 0 20px;
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 90px;
   }
 
-  .header .logo {
-    order: 1;
+  .navbar-collapse {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: var(--sombra-suave);
   }
 
-  .btn-whatsapp {
-    order: 2;
+  .clinica-carousel .carousel-caption {
+    left: 8%;
+    right: 8%;
+    bottom: 11%;
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .header label {
-    display: block;
-    order: 3;
+  .clinica-carousel .carousel-caption p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .menu {
-    width: 260px;
-    position: fixed;
-    top: var(--header-height);
-    right: 0;
-    background: rgba(26,46,110,0.97);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    height: auto;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease, transform 0.4s ease;
-    transform: translateX(100%);
-    border-radius: 0 0 0 16px;
-    z-index: 999;
+  .album-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .results-carousel {
     padding: 0;
   }
 
-  #menu-bar:checked ~ .menu {
-    max-height: 400px;
-    transform: translateX(0);
+  .results-carousel .carousel-control-prev,
+  .results-carousel .carousel-control-next {
+    display: none;
   }
-
-  .menu a {
-    width: 100%;
-    color: var(--blanco);
-    padding: 16px 24px;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-    border-radius: 0;
-    font-size: 1rem;
-  }
-
-  .menu a:hover {
-    background: rgba(41,182,246,0.3);
-    color: var(--blanco);
-  }
-
-  .footer-contenido {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .mision-vision {
-    grid-template-columns: 1fr;
-  }
-
-  .contacto-grid {
-    grid-template-columns: 1fr;
-  }
-
 }
 
-@media (max-width: 768px) {
-
-  .header .logo h1 {
-    font-size: 1rem;
+@media (max-width: 767.98px) {
+  :root {
+    --header-height: 82px;
   }
 
-  .header .logo img {
-    width: 46px;
-    height: 46px;
+  .brand-lockup img {
+    width: 50px;
+    height: 50px;
   }
 
-  .btn-whatsapp {
-    font-size: 0.8rem;
-    padding: 8px 14px;
+  .brand-text {
+    font-size: 0.98rem;
   }
 
-  .banner {
-    height: 300px;
+  .btn-whatsapp span {
+    display: none;
   }
 
-  .banner-texto h2 {
-    font-size: 1.6rem;
+  .page-hero {
+    padding: 4.2rem 0 3.5rem;
   }
 
-  .banner-texto {
-    left: 24px;
-    bottom: 28px;
+  .clinica-carousel {
+    border-radius: 0 0 24px 24px;
   }
 
-  .tratamientos-grid {
-    gap: 24px;
+  .clinica-carousel .carousel-item {
+    height: 580px;
   }
 
-  .tratamiento-icono {
-    width: 82px;
-    height: 82px;
+  .clinica-carousel .carousel-caption h1,
+  .clinica-carousel .carousel-caption h2 {
+    font-size: 2.3rem;
   }
 
-  .tratamiento-icono img,
-  .tratamiento-icono svg {
-    width: 52px;
-    height: 52px;
-  }
-
-  .elegirnos-contenido {
-    flex-direction: column;
-    border-radius: var(--radio);
-  }
-
-  .elegirnos-imagen {
-    flex: 0 0 200px;
-    width: 100%;
-    border-radius: var(--radio) var(--radio) 0 0;
-    height: 220px;
-  }
-
-  .elegirnos-texto {
-    padding: 28px 24px;
-  }
-
-  .caso-img,
-  .caso-placeholder {
-    min-width: 100%;
-  }
-
-  .footer-contenido {
-    grid-template-columns: 1fr;
-    gap: 28px;
+  .feature-image {
+    min-height: 280px;
+    border-radius: 0px;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
   }
-
-  .page-hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .galeria-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .equipo-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .btn-whatsapp span {
-  display: none;
 }
 
-}
-
-@media (max-width: 480px) {
-
-  .tratamientos-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 84px;
   }
 
-  .galeria-grid {
-    grid-template-columns: 1fr;
+  .clinica-carousel .carousel-item {
+    height: 540px;
   }
 
-  .equipo-grid {
-    grid-template-columns: 1fr;
+  .clinica-carousel .carousel-caption {
+    bottom: 4rem;
   }
 
-  .mision-vision {
-    grid-template-columns: 1fr;
+  .service-icon {
+    width: 88px;
+    height: 88px;
   }
 
+  .service-icon img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .contact-form-card,
+  .contact-side-panel,
+  .story-card,
+  .privacy-card,
+  .footer-card,
+  .footer-form-card {
+    padding: 1.35rem;
+    border-radius: 22px;
+  }
+
+  .case-card img,
+  .team-card img {
+    height: 220px;
+  }
+
+    .feature-image {
+    min-height: 280px;
+    border-radius: 0px;
+  }
 }

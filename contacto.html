@@ -1,253 +1,390 @@
 <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <!-- === META TAGS === -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="autor" content="Iris Bejarano Durán">
-      <meta name="owner" content="Odontología San Isidro">
-      <meta name="description" content="Contáctanos en Odontología San Isidro. Agenda tu cita o resuelve tus dudas con nuestro equipo.">
-      <meta name="keywords" content="odontología, san isidro, contacto, cita, consulta, formulario">
-      <meta name="og:title" content="Contacto - Odontología San Isidro">
-      <meta name="language" content="spanish">
-      <meta name="distribution" content="global">
-      <meta name="robots" content="index, follow">
-      <!-- Link CSS principal -->
-      <link rel="stylesheet" href="css/styles.css">
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
-      <title>Contacto - Odontología San Isidro</title>
-    </head>
-      <body>
-        <!-- ===== HEADER FIJO ===== -->
-        <header class="header">
-          <div class="logo">
-            <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-            <h1>ODONTOLOGÍA <br>SAN ISIDRO</h1>
-          </div>
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar" class="icon-menu">&#9776;</label>
-
-          <nav class="menu">
-            <a href="index.html">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="galeria.html">GALERÍA</a>
-            <a href="contacto.html" class="activo">CONTACTO</a>
-          </nav>
-
-          <a href="https://wa.me/50689914444" class="btn-whatsapp" target="_blank" rel="noopener">
-            <img src="img/whatsapp.png" alt="WhatsApp">
-            <span>Contáctanos</span>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iris Bejarano Durán">
+    <meta name="owner" content="Odontología San Isidro">
+    <meta name="description" content="Contáctanos para agendar tu cita en Odontología San Isidro o resolver dudas sobre nuestros tratamientos.">
+    <meta name="keywords" content="contacto clínica dental, cita odontológica, WhatsApp dentista, Heredia">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
+    <title>Contacto | Odontología San Isidro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-shell">
+        <div class="container">
+          <a class="navbar-brand brand-lockup" href="index.html">
+            <img src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+            <span class="brand-text">ODONTOLOGÍA<br>SAN ISIDRO</span>
           </a>
-        </header>
-        <!-- / HEADER -->
 
-        <!-- ===== HERO DE PÁGINA ===== -->
-        <section class="page-hero">
-          <h2>CONTÁCTENOS</h2>
-          <p>Estamos para ayudarte. Agenda tu cita o envíanos tus preguntas y te responderemos a la brevedad.</p>
-        </section>
-        <!-- / HERO -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!-- ===== CONTENIDO PRINCIPAL ===== -->
-        <main>
-          <section class="page-section">
-            <div class="contacto-grid">
-              <div class="contacto-form-completo">
-                <h3>&#128203; Formulario de Contacto</h3>
-                <div class="form-grupo">
-                  <label for="nombre">Nombre *</label>
-                  <input
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-whatsapp" href="https://wa.me/50689914444" target="_blank" rel="noopener">
+                  <img src="img/whatsapp.png" alt="Ícono de WhatsApp">
+                  <span>Contáctanos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container text-center">
+          <span class="hero-chip">Agenda tu cita</span>
+          <h1 class="section-title text-white">Estamos listos para ayudarte</h1>
+          <p class="section-copy section-copy-light mx-auto">Usa el formulario de contacto o cualquiera de nuestros canales directos para coordinar tu valoración.</p>
+        </div>
+      </section>
+
+    <section class="py-5">
+      <div class="container py-lg-4">
+        <div class="row g-4 justify-content-center">
+          
+          <div class="col-lg-5">
+            <div class="contact-form-card h-100">
+
+              <div class="mb-4">
+                <h2 class="section-title mb-0">Escríbenos tu consulta</h2>
+              </div>
+
+              <form 
+                id="contactForm"
+                class="needs-validation"
+                data-form-type="contacto"
+                data-success-message="¡Mensaje enviado! Nos pondremos en contacto muy pronto."
+                novalidate
+              >
+
+                <div class="mb-3">
+                  <label class="form-label" for="nombre">Nombre</label>
+                  <input 
+                    class="form-control"
                     type="text"
                     id="nombre"
                     name="nombre"
-                    placeholder="Ej: Iris"
+                    placeholder="Ej. Iris"
                     required
-                    aria-required="true"
-                    aria-label="Nombre">
+                  >
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu nombre.
+                  </div>
                 </div>
 
-                <div class="form-grupo">
-                  <label for="apellidos">Apellidos *</label>
-                  <input
+                <div class="mb-3">
+                  <label class="form-label" for="apellidos">Apellidos</label>
+                  <input 
+                    class="form-control"
                     type="text"
                     id="apellidos"
                     name="apellidos"
-                    placeholder="Ej: Elizondo Durán"
+                    placeholder="Ej. Elizondo Durán"
                     required
-                    aria-required="true"
-                    aria-label="Apellidos">
+                  >
+                  <div class="invalid-feedback">
+                    Por favor ingresa tus apellidos.
+                  </div>
                 </div>
 
-                <div class="form-grupo">
-                  <label for="telefono">Teléfono *</label>
-                  <input
+                <div class="mb-3">
+                  <label class="form-label" for="telefono">Teléfono</label>
+                  <input 
+                    class="form-control"
                     type="tel"
                     id="telefono"
                     name="telefono"
-                    placeholder="Ej: 8888-8888"
+                    placeholder="8888-8888"
                     required
-                    aria-required="true"
-                    aria-label="Teléfono">
+                  >
+                  <div class="invalid-feedback">
+                    Por favor ingresa tu teléfono.
+                  </div>
                 </div>
 
-                <div class="form-grupo">
-                  <label for="correo">Correo Electrónico *</label>
-                  <input
+                <div class="mb-3">
+                  <label class="form-label" for="correo">Correo electrónico</label>
+                  <input 
+                    class="form-control"
                     type="email"
                     id="correo"
                     name="correo"
-                    placeholder="Ej: iris@correo.com"
+                    placeholder="nombre@correo.com"
                     required
-                    aria-required="true"
-                    aria-label="Correo electrónico">
+                  >
+                  <div class="invalid-feedback">
+                    Ingresa un correo válido.
+                  </div>
                 </div>
 
-                <div class="form-grupo">
-                  <label for="direccion">Dirección</label>
-                  <input
+                <div class="mb-3">
+                  <label class="form-label" for="direccion">Dirección</label>
+                  <input 
+                    class="form-control"
                     type="text"
                     id="direccion"
                     name="direccion"
-                    placeholder="Ej: San Isidro de Heredia"
-                    aria-label="Dirección">
+                    placeholder="San Isidro de Heredia"
+                  >
                 </div>
 
-                <div class="form-grupo">
-                  <label for="motivo">Motivo de Consulta *</label>
-                  <textarea
+                <div class="mb-3">
+                  <label class="form-label" for="preferencia">
+                    Preferencia de contacto
+                  </label>
+
+                  <select 
+                    class="form-select"
+                    id="preferencia"
+                    name="preferencia"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option>WhatsApp</option>
+                    <option>Llamada telefónica</option>
+                    <option>Correo electrónico</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label" for="motivo">
+                    Motivo de consulta
+                  </label>
+
+                  <textarea 
+                    class="form-control"
                     id="motivo"
                     name="motivo"
-                    placeholder="Cuéntanos en qué podemos ayudarte..."
+                    rows="6"
+                    placeholder="Cuéntanos en qué podemos ayudarte"
                     required
-                    aria-required="true"
-                    aria-label="Motivo de consulta"></textarea>
+                  ></textarea>
+
+                  <div class="invalid-feedback">
+                    Escribe el motivo de tu consulta.
+                  </div>
                 </div>
 
-                <button class="btn-contacto-enviar" type="button" onclick="enviarFormulario()">ENVIAR MENSAJE</button>
-
-                <div id="mensaje-ok" style="display:none; margin-top:16px; background:#e8f5e9; border-radius:8px; padding:14px; color:#2e7d32; font-weight:700; font-size:0.95rem;">
-                  &#10003; ¡Mensaje enviado! Nos pondremos en contacto pronto.
+                <div class=" d-sm-flex">
+                  <button 
+                    class="btn btn-brand-primary btn-lg "
+                    type="submit"
+                  >
+                    Enviar mensaje
+                  </button>
                 </div>
+
+                <div class="mt-3">
+                  <div class="form-status" role="status" aria-live="polite"></div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- PANEL DERECHO -->
+          <div class="col-lg-5">
+            <div class="contact-side-panel h-100">
+
+              <div class="mb-4">
+                <h2 class="section-title mb-3">Conversemos por el canal que prefieras</h2>
+                <p class="section-copy mb-0">
+                  También puedes comunicarte directamente con nuestro equipo mediante llamada, correo o WhatsApp.
+                </p>
               </div>
-              <!-- / FORMULARIO -->
 
-              <!-- INFORMACIÓN DE CONTACTO -->
-              <div class="contacto-info">
-                <h3>Información de Contacto</h3>
-
-                <div class="info-item">
-                  <div class="info-icon">&#128205;</div>
-                  <p>
-                    <strong>Dirección</strong><br>
-                    25 metros Este del cementerio de San Isidro,<br>
-                    Heredia, Costa Rica.
-                  </p>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">&#128222;</div>
-                  <p>
-                    <strong>Teléfonos</strong><br>
-                    (506) 2268-7007<br>
-                    (506) 8991-4444
-                  </p>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">&#128241;</div>
-                  <p>
-                    <strong>WhatsApp</strong><br>
-                    <a href="https://wa.me/50689914444" style="color: var(--azul-claro);">+506 89914444</a>
-                  </p>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">&#9993;</div>
-                  <p>
-                    <strong>Correo</strong><br>
-                    <a href="mailto:odontologiasanisidro@yahoo.com" style="color: var(--azul-claro);">odontologiasanisidro@yahoo.com</a>
-                  </p>
-                </div>
-
-                <div class="info-item">
-                  <div class="info-icon">&#128336;</div>
-                  <p>
-                    <strong>Horario de Atención</strong><br>
-                    Lunes a Viernes: 9am - 5pm<br>
-                    Sábados: 9am - 2pm<br>
-                    Domingos: Cerrado
-                  </p>
-                </div>
-
-                <!-- Redes sociales -->
-                <div style="margin-top:24px;">
-                  <p style="font-weight:700; color:var(--azul-oscuro); margin-bottom:12px;">Síguenos en redes:</p>
-                      <div class="redes">
-                      <a href="https://www.instagram.com/odontologiasanisidroheredia/" class="red-social" title="Instagram" aria-label="Instagram" target="_blank"><img src="img/footer/instagram.png" alt="Instagram"></a>
-                      <a href="https://www.facebook.com/OSIdentista?locale=es_LA" class="red-social" title="Facebook" aria-label="Facebook" target="_blank"><img src="img/footer/facebook.png" alt="Facebook"></a>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-1 g-3">
+                <div class="col">
+                  <article class="contact-info-card h-100">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                      <h3>Teléfonos</h3>
+                      <p>
+                        (506) 2268-7007<br>
+                        (506) 8991-4444
+                      </p>
                     </div>
+                  </article>
                 </div>
 
-                <!-- Mapa -->
-                <div class="mapa-contacto">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro">
-                  </iframe>
+                <div class="col">
+                  <article class="contact-info-card h-100">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                      <h3>WhatsApp</h3>
+                      <p>
+                        <a href="https://wa.me/50689914444" target="_blank" rel="noopener">
+                          +506 8991-4444
+                        </a>
+                      </p>
+                    </div>
+                  </article>
                 </div>
 
+                <div class="col">
+                  <article class="contact-info-card h-100">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                      <h3>Correo</h3>
+                      <p>
+                        <a href="mailto:odontologiasanisidro@yahoo.com">
+                          odontologiasanisidro@yahoo.com
+                        </a>
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                
+                <div class="col">
+                  <article class="contact-info-card h-100">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                      <h3>Dirección</h3>
+                      <p>
+                        25 metros Este del cementerio de San Isidro,
+                        Heredia, Costa Rica.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                
               </div>
-              <!-- / INFO -->
+
+              <div class="contact-map mt-4">
+                <div class="ratio ratio-4x3">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de Odontología San Isidro"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="contact-hours mt-4">
+                <h3>Horario de atención</h3>
+
+                <ul>
+                  <li>Lunes a viernes: 9:00 a.m. a 5:00 p.m.</li>
+                  <li>Sábados: 9:00 a.m. a 2:00 p.m.</li>
+                  <li>Domingos: Cerrado</li>
+                </ul>
+              </div>
 
             </div>
-          </section>
-        </main>
-        <!-- / MAIN -->
+          </div>
 
-              <!-- ===== FOOTER ===== -->
-              <footer class="footer">
-                <div class="footer-contenido">
-                  <div class="footer-logo">
-                    <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-                    <p>Contáctanos</p>
-                    <div class="redes">
-                      <a href="https://wa.me/89914444" class="red-social" title="WhatsApp" aria-label="WhatsApp" target="_blank"><img src="img/footer/whatsapp.png" alt="WhatsApp"></a>
-                      <a href="tel:+50622687007" class="red-social" title="Teléfono" aria-label="Teléfono"><img src="img/footer/telefono.png" alt="Teléfono"></a>
-                      <a href="https://www.instagram.com/odontologiasanisidroheredia/" class="red-social" title="Instagram" aria-label="Instagram" target="_blank"><img src="img/footer/instagram.png" alt="Instagram"></a>
-                      <a href="https://www.facebook.com/OSIdentista?locale=es_LA" class="red-social" title="Facebook" aria-label="Facebook" target="_blank"><img src="img/footer/facebook.png" alt="Facebook"></a>
-                      <a href="mailto:odontologiasanisidro@yahoo.com" class="red-social" title="Email" aria-label="Email"><img src="img/footer/email.png" alt="Email"></a>
-                    </div>
-                  </div>
+        </div>
+      </div>
+    </section>
+    </main>
 
-                  <div class="footer-info">
-                    <h3>UBICACIÓN</h3>
-                    <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 footer-grid">
+          <div class="col-lg-4">
+            <div class="footer-brand footer-card">
+              <h3>Contáctanos</h3>
+              <p>Atención cálida, tecnología moderna y tratamientos personalizados para cuidar la sonrisa de toda tu familia.</p>
+              <div class="social-links">
+                <a class="social-link" href="https://wa.me/50689914444" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <img src="img/footer/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a class="social-link" href="tel:+50622687007" title="Teléfono" aria-label="Teléfono">
+                  <img src="img/footer/telefono.png" alt="Teléfono">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/odontologiasanisidroheredia/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+                  <img src="img/footer/instagram.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://www.facebook.com/OSIdentista?locale=es_LA" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                  <img src="img/footer/facebook.png" alt="Facebook">
+                </a>
+                <a class="social-link" href="mailto:odontologiasanisidro@yahoo.com" title="Correo electrónico" aria-label="Correo electrónico">
+                  <img src="img/footer/email.png" alt="Correo electrónico">
+                </a>
+                <img class="logo-footer" src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+              </div>
+            </div>
+          </div>
 
-                    <div class="mapa-embed">
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro">
-                      </iframe>
-                    </div>
+          <div class="col-lg-4">
+            <div class="footer-card h-100">
+              <h3>Visítanos</h3>
+              <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
+              <div class="mapa-embed ratio ratio-4x3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro"></iframe>
+              </div>
+              <ul class="footer-hours">
+                <li>Lunes a viernes: 9:00 a.m. a 5:00 p.m.</li>
+                <li>Sábados: 9:00 a.m. a 2:00 p.m.</li>
+                <li>Domingos: Cerrado</li>
+              </ul>
+            </div>
+          </div>
 
-                    <h3 style="margin-top:16px;">HORARIO</h3>
-                    <ul>
-                      <li>Lunes a Viernes: 9am a 5pm</li>
-                      <li>Sábados: 9am a 2pm</li>
-                      <li>Domingo: Cerrado</li>
-                    </ul>
-                  </div>
-                  </div>
+          <div class="col-lg-4">
+            <div class="footer-form-card h-100">
+              <h3>Escríbenos desde aquí</h3>
+              <p>Déjanos tus datos y te contactaremos para ayudarte con tu consulta o cita.</p>
+              <form class="footer-contact-form row g-3 needs-validation" data-form-type="footer" data-success-message="Gracias por escribirnos. Te responderemos pronto." novalidate>
+                <div class="col-12">
+                  <label class="form-label" for="footerNombre">Nombre</label>
+                  <input class="form-control" type="text" id="footerNombre" name="nombre" placeholder="Tu nombre" required>
+                  <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
                 </div>
-
-                <!-- Términos de privacidad -->
-                <div class="footer-bottom">
-                  <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
-                  <span>
-                    <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Términos de privacidad</a>
-                  </span>
+                <div class="col-12">
+                  <label class="form-label" for="footerCorreo">Correo electrónico</label>
+                  <input class="form-control" type="email" id="footerCorreo" name="correo" placeholder="nombre@correo.com" required>
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
                 </div>
-              </footer>
-              <!-- / FOOTER -->
+                <div class="col-12">
+                  <label class="form-label" for="footerMensaje">Mensaje</label>
+                  <textarea class="form-control" id="footerMensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+                  <div class="invalid-feedback">Escribe un mensaje breve.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-footer-submit w-100" type="submit">Enviar consulta</button>
+                </div>
+                <div class="col-12">
+                  <div class="form-status" role="status" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 
-      </body>
-  </html>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
+          <span><a href="privacidad.html">Política de privacidad</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

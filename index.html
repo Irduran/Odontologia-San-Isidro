@@ -1,186 +1,380 @@
 <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <!-- === META TAGS === -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="autor" content="Iris Bejarano Durán">
-      <meta name="owner" content="Odontología San Isidro">
-      <meta name="description" content="Somos una clínica odontológica especializada en el cuidado de tu salud bucal.">
-      <meta name="keywords" content="odontología, san isidro, clínica, salud bucal, tratamientos odontológicos, dentista, cirugía bucal, implantes, ortodoncia, estética dental, limpieza dental, calzas estéticas, casos de éxito">
-      <meta name="og:title" content="Odontología San Isidro">
-      <meta name="language" content="spanish">
-      <meta name="distribution" content="global">
-      <meta name="robots" content="index, follow">
-      <!-- Link al CSS principal -->
-      <link rel="stylesheet" href="css/styles.css">
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
-      <title>Odontología San Isidro</title>
-    </head>
-      <body>
-        <!-- ===== HEADER  ===== -->
-        <header class="header">
-          <div class="logo">
-            <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-            <h1>ODONTOLOGÍA <br>SAN ISIDRO</h1>
-          </div>
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar" class="icon-menu">&#9776;</label>
-          <nav class="menu">
-            <a href="index.html" class="activo">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="galeria.html">GALERÍA</a>
-            <a href="contacto.html">CONTACTO</a>
-          </nav>
-
-          <a href="https://wa.me/50689914444" class="btn-whatsapp" target="_blank" rel="noopener">
-            <img src="img/whatsapp.png" alt="WhatsApp">
-            <span>Contáctanos</span>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iris Bejarano Durán">
+    <meta name="owner" content="Odontología San Isidro">
+    <meta name="description" content="Clínica odontológica en San Isidro de Heredia con atención integral, especialistas y tecnología moderna para cuidar tu sonrisa.">
+    <meta name="keywords" content="odontología, clínica dental, San Isidro, Heredia, implantes, ortodoncia, estética dental, limpieza dental">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
+    <title>Odontología San Isidro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-shell">
+        <div class="container">
+          <a class="navbar-brand brand-lockup" href="index.html">
+            <img src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+            <span class="brand-text">ODONTOLOGÍA<br>SAN ISIDRO</span>
           </a>
-        </header>
-        <!-- / HEADER -->
 
-        <!-- ===== BANNER / CARRUSEL ===== -->
-        <section class="banner">
-          <div class="banner-slides">
-            <div class="banner-slide">
-              <img src="img/clinica.jpeg" alt="Clínica Odontología San Isidro">
-              <div class="banner-texto">
-                <h2>Tu sonrisa es<br>nuestra pasión</h2>
-                <p>Clínica especializada en salud bucal integral</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-whatsapp" href="https://wa.me/50689914444" target="_blank" rel="noopener">
+                  <img src="img/whatsapp.png" alt="Ícono de WhatsApp">
+                  <span>Contáctanos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-carousel">
+        <div id="clinicaCarousel" class="carousel slide carousel-fade clinica-carousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#clinicaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#clinicaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#clinicaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/clinica.jpeg" class="d-block w-100 hero-media" alt="Clínica Odontología San Isidro">
+              <div class="carousel-caption">
+                <h1>Tu sonrisa es nuestra pasión</h1>
+                <p>Atención cercana, especialistas y tecnología moderna para cuidar tu salud bucal con confianza.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                  <a class="btn btn-brand-primary btn-lg" href="contacto.html">Agendar cita</a>
+                  <a class="btn btn-brand-light btn-lg" href="nosotros.html">Conocer al equipo</a>
+                </div>
               </div>
             </div>
-            <div class="banner-slide">
-              <img src="img/especialistas.png" alt="Especialistas">
-              <div class="banner-texto">
-                <h2>Especialistas<br>a tu servicio</h2>
-                <p>Equipo médico calificado y comprometido</p>
+
+            <div class="carousel-item">
+              <img src="img/especialistas.png" class="d-block w-100 hero-media" alt="Equipo de especialistas">
+              <div class="carousel-caption">
+                <h2>Especialistas a tu servicio</h2>
+                <p>Profesionales comprometidos con tratamientos personalizados y una experiencia cálida en cada visita.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                  <a class="btn btn-brand-primary btn-lg" href="nosotros.html">Ver especialistas</a>
+                  <a class="btn btn-brand-light btn-lg" href="galeria.html">Explorar resultados</a>
+                </div>
               </div>
             </div>
-            <div class="banner-slide">
-              <img src="img/silladental.jpeg" alt="Instalaciones modernas">
-              <div class="banner-texto">
-                <h2>Tecnología<br>de vanguardia</h2>
-                <p>Equipos modernos para tu comodidad y seguridad</p>
+
+            <div class="carousel-item">
+              <img src="img/silladental.jpeg" class="d-block w-100 hero-media" alt="Instalaciones y tecnología dental">
+              <div class="carousel-caption">
+                <h2>Tecnología de vanguardia</h2>
+                <p>Instalaciones modernas y equipos actualizados para brindarte seguridad, estética y bienestar.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                  <a class="btn btn-brand-primary btn-lg" href="contacto.html">Solicitar valoración</a>
+                  <a class="btn btn-brand-light btn-lg" href="galeria.html">Ver casos de éxito</a>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-        <!-- / BANNER -->
 
-        <!-- ===== TRATAMIENTOS DE INTERÉS ===== -->
-        <section class="tratamientos">
-          <h2>TRATAMIENTOS DE INTERÉS</h2>
-          <div class="tratamientos-grid">
-            <div class="tratamiento-item">
-              <div class="tratamiento-icono">
-                <img src="img/iconos/calzas.png" alt="Calzas Estéticas">
-              </div>
-              <p>Calzas Estéticas</p>
-            </div>
-            <div class="tratamiento-item">
-              <div class="tratamiento-icono">
-                <img src="img/iconos/limpieza.png" alt="Limpiezas">
-              </div>
-              <p>Limpiezas</p>
-            </div>
-            <div class="tratamiento-item">
-              <div class="tratamiento-icono">
-                <img src="img/iconos/implante.png" alt="Implantes">
-              </div>
-              <p>Implantes</p>
-            </div>
-            <div class="tratamiento-item">
-              <div class="tratamiento-icono">
-              <img src="img/iconos/ortodoncia.png" alt="Ortodoncia">
-              </div>
-              <p>Ortodoncia</p>
-            </div>
-          </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#clinicaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#clinicaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
 
-        <!-- / TRATAMIENTOS -->
-
-        <!-- ===== ¿POR QUÉ ELEGIRNOS? ===== -->
-        <section class="elegirnos">
-          <div class="elegirnos-contenido">
-            <div class="elegirnos-imagen">
-              <img src="img/doctora.jpeg" alt="Doctora especialista">
-            </div>
-            <div class="elegirnos-texto">
-              <h2>¿POR QUÉ ELEGIRNOS?</h2>
-              <p>
-                En nuestra clínica encontrarás doctores especializados en distintas áreas,
-                equipo e instalaciones modernas, además de una amplia gama de tratamientos
-                los cuales se adaptarán a tus necesidades.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- / ELEGIRNOS -->
-
-        <!-- ===== CASOS DE ÉXITO ===== -->
-        <section class="casos">
-          <h2>CASOS DE ÉXITO</h2>
-          <div class="casos-carrusel-wrapper">
-            <div class="casos-galeria" id="casos-galeria">
-              <img class="caso-img" src="img/casos/antes-despues.png" alt="Caso 1 - Antes/Después">
-              <img class="caso-img" src="img/casos/implante.png" alt="Caso 2 - Implante">
-              <img class="caso-img" src="img/casos/ortodoncia.png" alt="Caso 3 - Ortodoncia">
-            </div>
+      <section class="treatments-section py-5">
+        <div class="container py-lg-4">
+          <div class="section-heading text-center">
+            <span class="section-kicker section-kicker-light">Servicios destacados</span>
+            <h2 class="section-title text-white">Tratamientos de interés</h2>
           </div>
 
-          <a href="galeria.html" class="btn-vermas">Ver Más</a>
-        </section>
-        <!-- / CASOS -->
+          <div class="row g-4 justify-content-center mt-2">
+            <div class="col-6 col-md-6 col-lg-3">
+              <article class="card service-card h-100 border-0 text-center">
+                <div class="service-icon">
+                  <img src="img/iconos/calzas.png" alt="Calzas estéticas">
+                </div>
+                <div class="card-body pt-0">
+                  <h3 class="card-title">Calzas estéticas</h3>
+                  <p class="card-text">Restauraciones naturales para devolver armonía y funcionalidad a tu sonrisa.</p>
+                </div>
+              </article>
+            </div>
 
-        <!-- ===== FOOTER ===== -->
-        <footer class="footer">
-          <div class="footer-contenido">
-            <div class="footer-logo">
-              <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-              <p>Contáctanos</p>
-              <div class="redes">
-                <a href="https://wa.me/89914444" class="red-social" title="WhatsApp" aria-label="WhatsApp" target="_blank"><img src="img/footer/whatsapp.png" alt="WhatsApp"></a>
-                <a href="tel:+50622687007" class="red-social" title="Teléfono" aria-label="Teléfono"><img src="img/footer/telefono.png" alt="Teléfono"></a>
-                <a href="https://www.instagram.com/odontologiasanisidroheredia/" class="red-social" title="Instagram" aria-label="Instagram" target="_blank"><img src="img/footer/instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/OSIdentista?locale=es_LA" class="red-social" title="Facebook" aria-label="Facebook" target="_blank"><img src="img/footer/facebook.png" alt="Facebook"></a>
-                <a href="mailto:odontologiasanisidro@yahoo.com" class="red-social" title="Email" aria-label="Email"><img src="img/footer/email.png" alt="Email"></a>
+            <div class="col-6 col-md-6 col-lg-3">
+              <article class="card service-card h-100 border-0 text-center">
+                <div class="service-icon">
+                  <img src="img/iconos/limpieza.png" alt="Limpiezas dentales">
+                </div>
+                <div class="card-body pt-0">
+                  <h3 class="card-title">Limpiezas</h3>
+                  <p class="card-text">Prevención y cuidado profesional para mantener encías y dientes saludables.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3">
+              <article class="card service-card h-100 border-0 text-center">
+                <div class="service-icon">
+                  <img src="img/iconos/implante.png" alt="Implantes dentales">
+                </div>
+                <div class="card-body pt-0">
+                  <h3 class="card-title">Implantes</h3>
+                  <p class="card-text">Soluciones duraderas para recuperar estética, seguridad y calidad de vida.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3">
+              <article class="card service-card h-100 border-0 text-center">
+                <div class="service-icon">
+                  <img src="img/iconos/ortodoncia.png" alt="Ortodoncia">
+                </div>
+                <div class="card-body pt-0">
+                  <h3 class="card-title">Ortodoncia</h3>
+                  <p class="card-text">Tratamientos pensados para alinear tu sonrisa con precisión y comodidad.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+          <div class="feature-panel">
+            <div class="row g-0 align-items-stretch">
+              <div class="col-lg-4">
+                <img src="img/doctora.jpeg" class="feature-image" alt="Doctora especialista de la clínica">
+              </div>
+              <div class="col-lg-8">
+                <div class="feature-copy">
+                  <span class="section-kicker">Atención humana y moderna</span>
+                  <h2 class="section-title">¿Por qué elegirnos?</h2>
+                  <p class="section-copy mb-4">Encontrarás especialistas en distintas áreas, equipo moderno, instalaciones cómodas y tratamientos adaptados a las necesidades de cada paciente.</p>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="feature-badge">Diagnósticos personalizados</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-badge">Tecnología clínica actual</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-badge">Ambiente cálido y seguro</div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-badge">Seguimiento cercano</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results-section py-5">
+        <div class="container py-lg-4">
+          <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
+            <div>
+              <span class="section-kicker">Historias reales</span>
+              <h2 class="section-title">Casos de éxito</h2>
+              <p class="section-copy mb-0">Una selección de resultados que reflejan la calidad estética y funcional de nuestros tratamientos.</p>
+            </div>
+            <a href="galeria.html" class="btn btn-outline-brand">Ver galería completa</a>
+          </div>
+
+          <div id="casesCarousel" class="carousel slide results-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/antes-despues.png" class="card-img-top" alt="Caso de calzas estéticas">
+                      <div class="card-body">
+                        <h3 class="case-title">Calzas estéticas</h3>
+                        <p class="card-text">Recuperación visual armoniosa con acabado natural.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/implante.png" class="card-img-top" alt="Caso de implante dental">
+                      <div class="card-body">
+                        <h3 class="case-title">Implante dental</h3>
+                        <p class="card-text">Rehabilitación precisa con enfoque funcional y estético.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/ortodoncia.png" class="card-img-top" alt="Caso de ortodoncia">
+                      <div class="card-body">
+                        <h3 class="case-title">Ortodoncia</h3>
+                        <p class="card-text">Mejora progresiva en alineación y equilibrio de la sonrisa.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/limpieza.png" class="card-img-top" alt="Caso de limpieza dental">
+                      <div class="card-body">
+                        <h3 class="case-title">Limpieza dental</h3>
+                        <p class="card-text">Resultado fresco y saludable con enfoque preventivo.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/calzas2.png" class="card-img-top" alt="Caso de restauración dental">
+                      <div class="card-body">
+                        <h3 class="case-title">Restauración completa</h3>
+                        <p class="card-text">Reconstrucción estética para devolver confianza al sonreír.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col-md-4">
+                    <article class="card case-card h-100">
+                      <img src="img/casos/implante2.png" class="card-img-top" alt="Caso de rehabilitación oral">
+                      <div class="card-body">
+                        <h3 class="case-title">Rehabilitación oral</h3>
+                        <p class="card-text">Tratamiento integral para recuperar función y estabilidad.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="footer-info">
-              <h3>UBICACIÓN</h3>
+            <button class="carousel-control-prev" type="button" data-bs-target="#casesCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#casesCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 footer-grid">
+          <div class="col-lg-4">
+            <div class="footer-brand footer-card">
+              <h3>Contáctanos</h3>
+              <p>Atención cálida, tecnología moderna y tratamientos personalizados para cuidar la sonrisa de toda tu familia.</p>
+              <div class="social-links">
+                <a class="social-link" href="https://wa.me/50689914444" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <img src="img/footer/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a class="social-link" href="tel:+50622687007" title="Teléfono" aria-label="Teléfono">
+                  <img src="img/footer/telefono.png" alt="Teléfono">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/odontologiasanisidroheredia/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+                  <img src="img/footer/instagram.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://www.facebook.com/OSIdentista?locale=es_LA" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                  <img src="img/footer/facebook.png" alt="Facebook">
+                </a>
+                <a class="social-link" href="mailto:odontologiasanisidro@yahoo.com" title="Correo electrónico" aria-label="Correo electrónico">
+                  <img src="img/footer/email.png" alt="Correo electrónico">
+                </a>
+                <img class="logo-footer" src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-card h-100">
+              <h3>Visítanos</h3>
               <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
-
-              <div class="mapa-embed">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro">
-                </iframe>
+              <div class="mapa-embed ratio ratio-4x3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro"></iframe>
               </div>
-
-              <h3 style="margin-top:16px;">HORARIO</h3>
-              <ul>
-                <li>Lunes a Viernes: 9am a 5pm</li>
-                <li>Sábados: 9am a 2pm</li>
-                <li>Domingo: Cerrado</li>
+              <ul class="footer-hours">
+                <li>Lunes a viernes: 9:00 a.m. a 5:00 p.m.</li>
+                <li>Sábados: 9:00 a.m. a 2:00 p.m.</li>
+                <li>Domingos: Cerrado</li>
               </ul>
             </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-form-card h-100">
+              <h3>Escríbenos desde aquí</h3>
+              <p>Déjanos tus datos y te contactaremos para ayudarte con tu consulta o cita.</p>
+              <form class="footer-contact-form row g-3 needs-validation" data-form-type="footer" data-success-message="Gracias por escribirnos. Te responderemos pronto." novalidate>
+                <div class="col-12">
+                  <label class="form-label" for="footerNombre">Nombre</label>
+                  <input class="form-control" type="text" id="footerNombre" name="nombre" placeholder="Tu nombre" required>
+                  <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerCorreo">Correo electrónico</label>
+                  <input class="form-control" type="email" id="footerCorreo" name="correo" placeholder="nombre@correo.com" required>
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerMensaje">Mensaje</label>
+                  <textarea class="form-control" id="footerMensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+                  <div class="invalid-feedback">Escribe un mensaje breve.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-footer-submit w-100" type="submit">Enviar consulta</button>
+                </div>
+                <div class="col-12">
+                  <div class="form-status" role="status" aria-live="polite"></div>
+                </div>
+              </form>
             </div>
           </div>
+        </div>
 
-          <!-- Términos de privacidad -->
-          <div class="footer-bottom">
-            <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
-            <span>
-              <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Términos de privacidad</a>
-            </span>
-          </div>
-        </footer>
-        <!-- / FOOTER -->
+        <div class="footer-bottom">
+          <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
+          <span><a href="privacidad.html">Política de privacidad</a></span>
+        </div>
+      </div>
+    </footer>
 
-      </body>
-  </html>
-
-  
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,157 +1,275 @@
 <!DOCTYPE html>
-  <html lang="es">
-    <head>
-      <!-- === META TAGS === -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="autor" content="Iris Bejarano Durán">
-      <meta name="owner" content="Odontología San Isidro">
-      <meta name="description" content="Somos una clínica odontológica especializada en el cuidado de tu salud bucal.">
-      <meta name="keywords" content="odontología, san isidro, clínica, salud bucal, tratamientos odontológicos, dentista, cirugía bucal, implantes, ortodoncia, estética dental, limpieza dental, calzas estéticas, casos de éxito">
-      <meta name="og:title" content="Odontología San Isidro">
-      <meta name="language" content="spanish">
-      <meta name="distribution" content="global">
-      <meta name="robots" content="index, follow">
-      <!-- Link al CSS principal -->
-      <link rel="stylesheet" href="css/styles.css">
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
-      <title>Odontología San Isidro</title>
-    </head>
-      <body>
-
-        <!-- ===== HEADER  ===== -->
-        <header class="header">
-          <div class="logo">
-            <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-            <h1>ODONTOLOGÍA <br>SAN ISIDRO</h1>
-          </div>
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar" class="icon-menu">&#9776;</label>
-          <nav class="menu">
-            <a href="index.html">INICIO</a>
-            <a href="nosotros.html">NOSOTROS</a>
-            <a href="galeria.html" class="activo">GALERÍA</a>
-            <a href="contacto.html">CONTACTO</a>
-          </nav>
-
-          <a href="https://wa.me/50689914444" class="btn-whatsapp" target="_blank" rel="noopener">
-            <img src="img/whatsapp.png" alt="WhatsApp">
-            <span>Contáctanos</span>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iris Bejarano Durán">
+    <meta name="owner" content="Odontología San Isidro">
+    <meta name="description" content="Galería de casos de Odontología San Isidro con resultados reales en estética dental, ortodoncia, implantes y más.">
+    <meta name="keywords" content="galería dental, casos de éxito, implantes, ortodoncia, estética dental, Heredia">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/logos/logoOSI.ico" type="image/x-icon">
+    <title>Galería | Odontología San Isidro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-shell">
+        <div class="container">
+          <a class="navbar-brand brand-lockup" href="index.html">
+            <img src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+            <span class="brand-text">ODONTOLOGÍA<br>SAN ISIDRO</span>
           </a>
-        </header>
-        <!-- / HEADER -->
-            <!-- ===== HERO DE PÁGINA ===== -->
-            <section class="page-hero">
-              <h2>GALERÍA DE CASOS</h2>
-              <p>Resultados reales que transforman sonrisas y vidas. Conoce el trabajo de nuestros especialistas.</p>
-            </section>
-            <!-- / HERO -->
 
-            <!-- ===== CONTENIDO PRINCIPAL ===== -->
-            <main>
-              <!-- GALERÍA GRID -->
-              <section class="page-section" style="padding-top:0;">
-                <div class="galeria-grid" id="galeria-grid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                  <div class="galeria-item">
-                    <img src="img/casos/antes-despues.png" alt="Calzas Estéticas - Antes y Después">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Calzas Estéticas</span>
-                      <span class="galeria-descripcion">Antes y Después</span>
-                    </div>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item ms-lg-3">
+                <a class="btn btn-whatsapp" href="https://wa.me/50689914444" target="_blank" rel="noopener">
+                  <img src="img/whatsapp.png" alt="Ícono de WhatsApp">
+                  <span>Contáctanos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container text-center">
+          <span class="hero-chip">Galería de casos</span>
+          <h1 class="section-title text-white">Resultados que hablan por sí solos</h1>
+          <p class="section-copy section-copy-light mx-auto">Transformaciones reales logradas por nuestro equipo en tratamientos estéticos, rehabilitación oral, limpieza y ortodoncia.</p>
+        </div>
+      </section>
+
+      <section class="album-section py-5">
+        <div class="container py-lg-4">
+          <div class="album-intro">
+            <div>
+              <h2 class="section-title">Casos destacados</h2>
+            </div>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-1">
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/antes-despues.png" data-title="Restauración estética" data-description="Trabajo orientado a recuperar forma, color y seguridad al sonreír." data-alt="Calzas estéticas antes y después">
+                <div class="gallery-media">
+                  <img src="img/casos/antes-despues.png" alt="Calzas estéticas antes y después">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Calzas estéticas</span>
+                    <p>Antes y después</p>
                   </div>
-
-                  <div class="galeria-item">
-                    <img src="img/casos/implante.png" alt="Implante Dental - Resultado Final">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Implante Dental</span>
-                      <span class="galeria-descripcion">Resultado Final</span>
-                    </div>
-                  </div>
-
-                  <div class="galeria-item">
-                    <img src="img/casos/ortodoncia.png" alt="Ortodoncia">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Ortodoncia</span>
-                      <span class="galeria-descripcion"></span>
-                    </div>
-                  </div>
-
-                  <div class="galeria-item">
-                    <img src="img/casos/limpieza.png" alt="Limpieza Dental - Antes y Después">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Limpieza Dental</span>
-                      <span class="galeria-descripcion"></span>
-                    </div>
-                  </div>
-
-                  <div class="galeria-item">
-                    <img src="img/casos/calzas2.png" alt="Calzas Estéticas - Restauración completa">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Calzas Estéticas</span>
-                      <span class="galeria-descripcion">Restauración completa</span>
-                    </div>
-                  </div>
-
-                  <div class="galeria-item" >
-                    <img src="img/casos/implante2.png" alt="Implante Múltiple - Rehabilitación oral">
-                    <div class="galeria-overlay">
-                      <span class="galeria-categoria">Implante Múltiple</span>
-                      <span class="galeria-descripcion">Rehabilitación oral</span>
-                    </div>
-                  </div>
-
                 </div>
-              </section>
-              <!-- / GALERÍA GRID -->
-
-            </main>
-            <!-- / MAIN -->
-          <!-- ===== FOOTER ===== -->
-          <footer class="footer">
-            <div class="footer-contenido">
-              <div class="footer-logo">
-                <img src="img/logos/LogoOSI.png" alt="Logo Odontología San Isidro">
-                <p>Contáctanos</p>
-                <div class="redes">
-                  <a href="https://wa.me/89914444" class="red-social" title="WhatsApp" aria-label="WhatsApp" target="_blank"><img src="img/footer/whatsapp.png" alt="WhatsApp"></a>
-                  <a href="tel:+50622687007" class="red-social" title="Teléfono" aria-label="Teléfono"><img src="img/footer/telefono.png" alt="Teléfono"></a>
-                  <a href="https://www.instagram.com/odontologiasanisidroheredia/" class="red-social" title="Instagram" aria-label="Instagram" target="_blank"><img src="img/footer/instagram.png" alt="Instagram"></a>
-                  <a href="https://www.facebook.com/OSIdentista?locale=es_LA" class="red-social" title="Facebook" aria-label="Facebook" target="_blank"><img src="img/footer/facebook.png" alt="Facebook"></a>
-                  <a href="mailto:odontologiasanisidro@yahoo.com" class="red-social" title="Email" aria-label="Email"><img src="img/footer/email.png" alt="Email"></a>
+                <div class="card-body">
+                  <h3 class="card-title">Restauración estética</h3>
+                  <p class="card-text">Trabajo orientado a recuperar forma, color y seguridad al sonreír.</p>
                 </div>
-              </div>
-
-              <div class="footer-info">
-                <h3>UBICACIÓN</h3>
-                <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
-
-                <div class="mapa-embed">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro">
-                  </iframe>
-                </div>
-
-                <h3 style="margin-top:16px;">HORARIO</h3>
-                <ul>
-                  <li>Lunes a Viernes: 9am a 5pm</li>
-                  <li>Sábados: 9am a 2pm</li>
-                  <li>Domingo: Cerrado</li>
-                </ul>
-              </div>
-              </div>
+              </article>
             </div>
 
-            <!-- Términos de privacidad -->
-            <div class="footer-bottom">
-              <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
-              <span>
-                <a href="privacidad.html" target="_blank" rel="noopener noreferrer">Términos de privacidad</a>
-              </span>
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/implante.png" data-title="Implante unitario" data-description="Recuperación funcional con una solución estable y estética." data-alt="Implante dental resultado final">
+                <div class="gallery-media">
+                  <img src="img/casos/implante.png" alt="Implante dental resultado final">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Implante dental</span>
+                    <p>Resultado final</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Implante unitario</h3>
+                  <p class="card-text">Recuperación funcional con una solución estable y estética.</p>
+                </div>
+              </article>
             </div>
-          </footer>
-          <!-- / FOOTER -->
 
-      </body>
-  </html>
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/ortodoncia.png" data-title="Corrección progresiva" data-description="Mejora del equilibrio dental con seguimiento cercano y preciso." data-alt="Caso de ortodoncia">
+                <div class="gallery-media">
+                  <img src="img/casos/ortodoncia.png" alt="Caso de ortodoncia">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Ortodoncia</span>
+                    <p>Alineación dental</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Corrección progresiva</h3>
+                  <p class="card-text">Mejora del equilibrio dental con seguimiento cercano y preciso.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/limpieza.png" data-title="Salud y frescura" data-description="Tratamiento preventivo para mantener una sonrisa sana y luminosa." data-alt="Limpieza dental antes y después">
+                <div class="gallery-media">
+                  <img src="img/casos/limpieza.png" alt="Limpieza dental antes y después">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Limpieza dental</span>
+                    <p>Cuidado preventivo</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Salud y frescura</h3>
+                  <p class="card-text">Tratamiento preventivo para mantener una sonrisa sana y luminosa.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/calzas2.png" data-title="Reconstrucción armónica" data-description="Resultados pensados para verse naturales y duraderos." data-alt="Caso de restauración con calzas estéticas">
+                <div class="gallery-media">
+                  <img src="img/casos/calzas2.png" alt="Caso de restauración con calzas estéticas">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Calzas estéticas</span>
+                    <p>Restauración completa</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Reconstrucción armónica</h3>
+                  <p class="card-text">Resultados pensados para verse naturales y duraderos.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="col">
+              <article class="card gallery-card gallery-trigger h-100" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#galleryModal" data-image="img/casos/implante2.png" data-title="Rehabilitación integral" data-description="Recuperación de funcionalidad y estética mediante planificación clínica." data-alt="Rehabilitación oral con implantes múltiples">
+                <div class="gallery-media">
+                  <img src="img/casos/implante2.png" alt="Rehabilitación oral con implantes múltiples">
+                  <div class="gallery-overlay">
+                    <span class="gallery-tag">Implante múltiple</span>
+                    <p>Rehabilitación oral</p>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Rehabilitación integral</h3>
+                  <p class="card-text">Recuperación de funcionalidad y estética mediante planificación clínica.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal fade gallery-modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="gallery-modal-kicker mb-1">Vista ampliada</p>
+              <h2 class="modal-title" id="galleryModalLabel">Caso clínico</h2>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <img id="galleryModalImage" src="" alt="" class="gallery-modal-image">
+            <p class="gallery-modal-description mb-0" id="galleryModalDescription"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 footer-grid">
+          <div class="col-lg-4">
+            <div class="footer-brand footer-card">
+              <h3>Contáctanos</h3>
+              <p>Atención cálida, tecnología moderna y tratamientos personalizados para cuidar la sonrisa de toda tu familia.</p>
+              <div class="social-links">
+                <a class="social-link" href="https://wa.me/50689914444" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <img src="img/footer/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a class="social-link" href="tel:+50622687007" title="Teléfono" aria-label="Teléfono">
+                  <img src="img/footer/telefono.png" alt="Teléfono">
+                </a>
+                <a class="social-link" href="https://www.instagram.com/odontologiasanisidroheredia/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+                  <img src="img/footer/instagram.png" alt="Instagram">
+                </a>
+                <a class="social-link" href="https://www.facebook.com/OSIdentista?locale=es_LA" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+                  <img src="img/footer/facebook.png" alt="Facebook">
+                </a>
+                <a class="social-link" href="mailto:odontologiasanisidro@yahoo.com" title="Correo electrónico" aria-label="Correo electrónico">
+                  <img src="img/footer/email.png" alt="Correo electrónico">
+                </a>
+                <img class="logo-footer" src="img/logos/LogoOSI.png" alt="Logo de Odontología San Isidro">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-card h-100">
+              <h3>Visítanos</h3>
+              <p>25 metros Este del cementerio de San Isidro, Heredia, Costa Rica.</p>
+              <div class="mapa-embed ratio ratio-4x3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1651.9705810717533!2d-84.05519433556701!3d10.01104892174912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e5df05b0f059%3A0xe1b28909065c29e3!2sOdontolog%C3%ADa%20San%20Isidro!5e0!3m2!1ses-419!2scr!4v1772909238999!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de Odontología San Isidro"></iframe>
+              </div>
+              <ul class="footer-hours">
+                <li>Lunes a viernes: 9:00 a.m. a 5:00 p.m.</li>
+                <li>Sábados: 9:00 a.m. a 2:00 p.m.</li>
+                <li>Domingos: Cerrado</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="footer-form-card h-100">
+              <h3>Escríbenos desde aquí</h3>
+              <p>Déjanos tus datos y te contactaremos para ayudarte con tu consulta o cita.</p>
+              <form class="footer-contact-form row g-3 needs-validation" data-form-type="footer" data-success-message="Gracias por escribirnos. Te responderemos pronto." novalidate>
+                <div class="col-12">
+                  <label class="form-label" for="footerNombre">Nombre</label>
+                  <input class="form-control" type="text" id="footerNombre" name="nombre" placeholder="Tu nombre" required>
+                  <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerCorreo">Correo electrónico</label>
+                  <input class="form-control" type="email" id="footerCorreo" name="correo" placeholder="nombre@correo.com" required>
+                  <div class="invalid-feedback">Ingresa un correo válido.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="footerMensaje">Mensaje</label>
+                  <textarea class="form-control" id="footerMensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte" required></textarea>
+                  <div class="invalid-feedback">Escribe un mensaje breve.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-footer-submit w-100" type="submit">Enviar consulta</button>
+                </div>
+                <div class="col-12">
+                  <div class="form-status" role="status" aria-live="polite"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 Odontología San Isidro. Todos los derechos reservados.</span>
+          <span><a href="privacidad.html">Política de privacidad</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
